@@ -184,7 +184,6 @@ h1, h2, h3, h4, h5 {
 
   }
 
-
   h2.submit-subheading {
     font-weight: 500;
     line-height: 1.6;
@@ -192,7 +191,6 @@ h1, h2, h3, h4, h5 {
     font-size: 4vw;
     font-size: clamp(1.3rem, 1.7vw, 3rem) !important;
   }
-
 
   p, li {
     font-size: clamp(1.1rem, 1.3vw, 1.5rem) !important;
@@ -203,9 +201,6 @@ h1, h2, h3, h4, h5 {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-
-
-
 
     a {
       &:hover {
@@ -223,7 +218,6 @@ h1, h2, h3, h4, h5 {
   ul {
     margin-bottom: 1.6em;
     list-style-type: circle;
-
   }
 }
 
