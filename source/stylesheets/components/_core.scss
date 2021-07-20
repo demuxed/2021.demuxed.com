@@ -159,6 +159,12 @@ h1, h2, h3, h4, h5 {
     }
   }
 
+  iframe {
+    margin-bottom: 1em;
+    border:3px #fff solid;
+    border-radius: 10px;
+  }
+
   h1 {
     font-size: 3rem;
   }
@@ -388,7 +394,7 @@ h1, h2, h3, h4, h5 {
     }
 
      @include mq($small) {
-       padding: 0.8em;
+       padding: 0.8em 0em;
        width: 12em;
        margin: 0;
        margin-left: 1em;
