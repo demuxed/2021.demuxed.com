@@ -182,12 +182,20 @@ h1, h2, h3, h4, h5 {
   }
 
   h1.submit-heading {
-    font-size: 3.6vw;
+    font-size: 6.5vw;
+
+    @include mq($small) {
+      font-size: 4.5vw;
+    }
+
+    @include mq($med-large) {
+      font-size: 3.6vw;
+    }
+
     color: #fff;
     text-transform: uppercase;
     line-height: 1.11;
     font-family: "brandon-grotesque", sans-serif;
-
   }
 
   h2.submit-subheading {
