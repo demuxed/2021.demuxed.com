@@ -133,6 +133,108 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+.submit-section {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .submit-container {
+
+    position: relative;
+    padding: 1vw 5vw;
+
+    text-align: left;
+
+    @include mq($medium) {
+       width: 70%;
+    }
+
+    @include mq($large) {
+       width: 60%;
+    }
+
+    @include mq($xl-large) {
+       width: 54%;
+    }
+  }
+
+  iframe {
+    margin-bottom: 1em;
+    border:3px #fff solid;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  h4 {
+    font-size: 1.75rem;
+  }
+
+  h1.submit-heading {
+    font-size: 6.5vw;
+
+    @include mq($small) {
+      font-size: 4.5vw;
+    }
+
+    @include mq($med-large) {
+      font-size: 3.6vw;
+    }
+
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.11;
+    font-family: "brandon-grotesque", sans-serif;
+  }
+
+  h2.submit-subheading {
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    font-size: 4vw;
+    font-size: clamp(1.3rem, 1.7vw, 3rem) !important;
+  }
+
+  p, li {
+    font-size: clamp(1.1rem, 1.3vw, 1.5rem) !important;
+    line-height: 1.6em;
+
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+    a {
+      &:hover {
+      border-bottom: solid 2px $brand-coral;
+      }
+    }
+  }
+
+  li {
+    margin-bottom: 0.5em;
+    display: list-item;
+    margin-left: 1rem;
+  }
+
+  ul {
+    margin-bottom: 1.6em;
+    list-style-type: circle;
+  }
+}
+
 .hero {
   position: relative;
   text-align: center;
@@ -300,8 +402,8 @@ h1, h2, h3, h4, h5 {
     }
 
      @include mq($small) {
-       padding: 0.8em;
-       width: 12em;
+       padding: 0.8em 0em;
+       width: 9em;
        margin: 0;
        margin-left: 1em;
 
@@ -311,7 +413,7 @@ h1, h2, h3, h4, h5 {
      }
 
      @include mq($x-large) {
-      width: 13em;
+      width: 10em;
      }
    }
 
