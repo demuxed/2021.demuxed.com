@@ -139,6 +139,23 @@
         font-size: 0.9vw;
         font-size: clamp(0.8rem, 0.9vw, 1.1rem);
       }
+
+      &.signup-btn {
+        @include mq($med-large) {
+
+          background-color: #000;
+          color: #fff;
+          padding: 10px;
+          border-radius: 10px;
+
+          &:hover {
+            background-color: #000;
+            color: $brand-coral;
+            padding: 10px;
+            border-radius: 10px;
+          }
+        }
+      }
     }
 
     a:hover, &.selected a {
