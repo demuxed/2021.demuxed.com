@@ -1,6 +1,6 @@
 # Demuxed 2021
 
-There will be a Demuxed in 2021, it'll be hybrid.
+There will be a Demuxed in 2021, it'll be online.
 
 This is the website for it.
 
