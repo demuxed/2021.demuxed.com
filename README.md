@@ -1,6 +1,6 @@
 # Demuxed 2021
 
-There will be a Demuxed in 2021, it'll be hybrid.
+There will be a Demuxed in 2021, it'll be online.
 
 This is the website for it.
 
@@ -25,4 +25,4 @@ bundle exec middleman build
 
 Deployed to the Demuxed Vercel team.
 
-Master commits are deployed automatically to Vercel Prod.
+Commits to `main` are deployed automatically to Vercel Prod.
