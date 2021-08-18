@@ -25,4 +25,4 @@ bundle exec middleman build
 
 Deployed to the Demuxed Vercel team.
 
-Master commits are deployed automatically to Vercel Prod.
+Commits to `main` are deployed automatically to Vercel Prod.
