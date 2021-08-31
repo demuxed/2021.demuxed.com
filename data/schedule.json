@@ -1,0 +1,188 @@
+{
+  "tuesday": [
+    {
+      "start": " 9:00",
+      "end": " 9:15",
+      "title": "Opening Remarks"
+    },
+    {
+      "start": " 9:15",
+      "end": " 9:30",
+      "talk": "the-mostly-definitive-history-of-smellovision"
+    },
+    {
+      "start": " 9:30",
+      "end": " 9:55",
+      "talk": "contentaware-playback-for-lowlatency-live-streaming-of-sports"
+    },
+    {
+      "start": " 9:55",
+      "end": "10:10",
+      "title": "Break"
+    },
+    {
+      "start": "10:10",
+      "end": "10:25",
+      "talk": "txt2vid-ultralow-bitrate-compression-of-talkinghead-videos-via-text"
+    },
+    {
+      "start": "10:25",
+      "end": "10:50",
+      "talk": "its-time-to-whip-webrtc-into-shape"
+    },
+    {
+      "start": "10:50",
+      "end": "11:05",
+      "title": "Break"
+    },
+    {
+      "start": "11:05",
+      "end": "11:30",
+      "talk": "ocf-at-nflx"
+    },
+    {
+      "start": "11:30",
+      "end": "11:45",
+      "talk": "updates-on-the-ffmpeg-and-free-software-community"
+    },
+    {
+      "start": "11:45",
+      "end": "12:00",
+      "title": "Break"
+    },
+    {
+      "start": "12:00",
+      "end": "12:25",
+      "talk": "the-browser-as-a-video-rendering-engine-deep-dive-into-time-management"
+    },
+    {
+      "start": "12:25",
+      "end": "12:40",
+      "talk": "dos-and-donts-in-producing-a-vr-live-stream"
+    }
+  ],
+  "wednesday": [
+    {
+      "start": " 9:00",
+      "end": " 9:15",
+      "talk": "live-video-amas-in-30-days"
+    },
+    {
+      "start": " 9:15",
+      "end": " 9:40",
+      "talk": "distributed-request-tracing-for-the-streaming-video-ecosystem"
+    },
+    {
+      "start": " 9:40",
+      "end": " 9:55",
+      "title": "Break"
+    },
+    {
+      "start": " 9:55",
+      "end": "10:10",
+      "talk": "measuring-the-live-video-latency-at-scale"
+    },
+    {
+      "start": "10:10",
+      "end": "10:35",
+      "talk": "improving-streaming-experience-with-bayesian-optimization-from-ab-to-az-test-"
+    },
+    {
+      "start": "10:35",
+      "end": "10:50",
+      "title": "Break"
+    },
+    {
+      "start": "10:50",
+      "end": "11:05",
+      "talk": "open-caching-cdni-metadata-model-extensions"
+    },
+    {
+      "start": "11:05",
+      "end": "11:30",
+      "talk": "how-to-build-a-5day-antipiracy-solution-for-a-live-streaming-sport-event"
+    },
+    {
+      "start": "11:30",
+      "end": "11:45",
+      "title": "Break"
+    },
+    {
+      "start": "11:45",
+      "end": "12:10",
+      "talk": "understanding-typography-video-rendering--through-captions"
+    },
+    {
+      "start": "12:10",
+      "end": "12:25",
+      "talk": "content-classification-for-live-streams-with-ffmpeg"
+    }
+  ],
+  "thursday": [
+    {
+      "start": " 9:00",
+      "end": " 9:25",
+      "talk": "how-we-accelerated-live-2-vod-delivery-from-15-minutes-to-under-a-minute"
+    },
+    {
+      "start": " 9:25",
+      "end": " 9:50",
+      "talk": "accessibility--media-players"
+    },
+    {
+      "start": " 9:50",
+      "end": "10:05",
+      "title": "Break"
+    },
+    {
+      "start": "10:05",
+      "end": "10:40",
+      "title": "Lightning Talks"
+    },
+    {
+      "start": "10:40",
+      "end": "10:55",
+      "title": "Break"
+    },
+    {
+      "start": "10:55",
+      "end": "11:10",
+      "talk": "lowlatency-video-over-quic"
+    },
+    {
+      "start": "11:10",
+      "end": "11:25",
+      "talk": "the-dashboard-wont-load-tales-from-a-super-bowl-warzoom"
+    },
+    {
+      "start": "11:25",
+      "end": "11:50",
+      "talk": "using-the-power-of-edge-compute-to-enhance-streaming-delivery"
+    },
+    {
+      "start": "11:50",
+      "end": "12:05",
+      "title": "Break"
+    },
+    {
+      "start": "12:05",
+      "end": "12:20",
+      "talk": "origins-of-many-strange-things-in-video"
+    },
+    {
+      "start": "12:20",
+      "end": "12:35",
+      "talk": "whats-your-glitch-an-ode-to-datamoshing"
+    },
+    {
+      "start": "12:35",
+      "end": "13:00",
+      "talk": "whats-new-in-hls"
+    },
+    {
+      "start": "13:00",
+      "end": "13:05",
+      "title": "Closing Remarks"
+    }
+  ]
+}

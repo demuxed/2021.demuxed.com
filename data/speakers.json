@@ -1,0 +1,127 @@
+[
+  {
+    "name": "Ali C. Begen",
+    "company": "Networked Media",
+    "talk": "contentaware-playback-for-lowlatency-live-streaming-of-sports"
+  },
+  {
+    "name": "Behnam Kakavand",
+    "company": "Evolution Gaming",
+    "talk": "dos-and-donts-in-producing-a-vr-live-stream"
+  },
+  {
+    "name": "Christian Pillsbury",
+    "company": "Mux",
+    "talk": "accessibility--media-players"
+  },
+  {
+    "name": "Collin Miller",
+    "company": "Screencastify",
+    "talk": "puppeteer--canvas--webcodecs-to-replace-ffmpeg"
+  },
+  {
+    "name": "Eric Tang",
+    "company": "Livepeer",
+    "talk": "content-classification-for-live-streams-with-ffmpeg"
+  },
+  {
+    "name": "Glenn Goldstein",
+    "company": "Lumen",
+    "talk": "open-caching-cdni-metadata-model-extensions"
+  },
+  {
+    "name": "Guillaume du Pontavice",
+    "company": "Netflix",
+    "talk": "improving-streaming-experience-with-bayesian-optimization-from-ab-to-az-test-"
+  },
+  {
+    "name": "Jacques Blom",
+    "company": "Milk Video",
+    "talk": "the-browser-as-a-video-rendering-engine-deep-dive-into-time-management"
+  },
+  {
+    "name": "Janet Kim",
+    "company": "Apollo350",
+    "talk": "live-video-amas-in-30-days"
+  },
+  {
+    "name": "Jean-Baptiste Kempf",
+    "company": "Videolan",
+    "talk": "updates-on-the-ffmpeg-and-free-software-community"
+  },
+  {
+    "name": "Josh Evans",
+    "company": "Datazoom",
+    "talk": "distributed-request-tracing-for-the-streaming-video-ecosystem"
+  },
+  {
+    "name": "Leonard Bogdonoff",
+    "company": "Milk Video",
+    "talk": "understanding-typography-video-rendering--through-captions"
+  },
+  {
+    "name": "Loke Dupont",
+    "company": "TV2",
+    "talk": "how-we-accelerated-live-2-vod-delivery-from-15-minutes-to-under-a-minute"
+  },
+  {
+    "name": "Luke Curley",
+    "company": "Twitch",
+    "talk": "lowlatency-video-over-quic"
+  },
+  {
+    "name": "Matthew Donato",
+    "company": "Netflix",
+    "talk": "ocf-at-nflx"
+  },
+  {
+    "name": "Nicolas Levy",
+    "company": "Qualabs",
+    "talk": "how-to-build-a-5day-antipiracy-solution-for-a-live-streaming-sport-event"
+  },
+  {
+    "name": "Phil Cluff",
+    "company": "Demuxed",
+    "talk": "the-mostly-definitive-history-of-smellovision"
+  },
+  {
+    "name": "Pulkit Tandon",
+    "company": "Stanford",
+    "talk": "txt2vid-ultralow-bitrate-compression-of-talkinghead-videos-via-text"
+  },
+  {
+    "name": "Robert Labonte",
+    "company": "Fastly",
+    "talk": "using-the-power-of-edge-compute-to-enhance-streaming-delivery"
+  },
+  {
+    "name": "Ryan Jespersen",
+    "company": "Millicast",
+    "talk": "its-time-to-whip-webrtc-into-shape"
+  },
+  {
+    "name": "Sean McCarthy",
+    "company": "CBSi",
+    "talk": "the-dashboard-wont-load-tales-from-a-super-bowl-warzoom"
+  },
+  {
+    "name": "Vanessa Pyne",
+    "company": "Daily.co",
+    "talk": "whats-your-glitch-an-ode-to-datamoshing"
+  },
+  {
+    "name": "Yuriy Reznik",
+    "company": "Brightcove",
+    "talk": "origins-of-many-strange-things-in-video"
+  },
+  {
+    "name": "Yurong Jiang",
+    "company": "LinkedIn",
+    "talk": "measuring-the-live-video-latency-at-scale"
+  },
+  {
+    "name": "Zac Shenker",
+    "company": "Fastly",
+    "talk": "whats-new-in-hls"
+  }
+]
