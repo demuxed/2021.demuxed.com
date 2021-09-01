@@ -55,8 +55,8 @@
       "Glenn Goldstein"
     ]
   },
-  "improving-streaming-experience-with-bayesian-optimization-from-ab-to-az-test-": {
-    "title": "Improving Streaming Experience with Bayesian Optimization, from AB to AZ test !",
+  "improving-streaming-experience-with-bayesian-optimization-from-ab-to-az-test": {
+    "title": "Improving Streaming Experience with Bayesian Optimization, from AB to AZ test!",
     "description": "The video streaming system of Netflix has hundreds of configuration parameters that influence many aspects of the playback behavior when using our service; for example, such configurations specify the amount of video content to load before we begin playback to balance play delay and risk of rebuffers.<br>Usually, we perform many iterations of A/B experiments to fine-tune these values and provide the best possible member experience across the wide range of platforms and networks we serve worldwide. Still, identifying good configurations that work well across diverse networks and devices, in particular when dealing with multi-dimensional parameters, is challenging given their complex interactions with various streaming metrics.<br>To help with these challenges, one powerful approach we have evaluated in the last years is Bayesian optimization. With this method, we can efficiently explore and understand the relationship between configuration parameters and objective metrics (such as playdelay, rebuffer rate, …)  by building a surrogate model that incorporates experimental observations and guides future experiments.<br><br>In this presentation, we give a brief introduction into the world’s leading streaming entertainment service Netflix - followed by an example use case on how we use Bayesian optimization in conjunction with our A/B experimentation framework to deliver concrete service improvements for our users.",
     "speakers": [
       "Guillaume du Pontavice"
