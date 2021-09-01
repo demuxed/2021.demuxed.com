@@ -141,5 +141,10 @@
     "company": "Fastly",
     "talk": "whats-new-in-hls",
     "custom_photo_url": "https://demuxed-speakers-2021.imgix.net/zac-shenker.jpg?w=170&h=240&fp-x=0.43&fp-y=0.45&fit=crop&fp-z=1.1&crop=focalpoint&auto=format,compress&q=70"
+  },
+  {
+    "name": "Zoe Liu",
+    "company": "Visionular",
+    "talk": "pseudo-hdr--enabling-hdr-experience-for-sdr-video-streaming-to-ordinary-devices"
   }
 ]

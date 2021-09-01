@@ -1491,19 +1491,17 @@ h1, h2, h3, h4, h5 {
           url('/images/svg/sponsor-border-l.svg');
         background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
         background-position: top, right, bottom, left;
-        padding: 3.5em 0;
+        padding: 1em 0;
 
         @include mq($medium) {
-          padding: 2em 1em;
+          padding: 1em 1em;
         }
 
         @include mq($med-large) {
-          padding: 3.5vw 1em;
+          padding: 1em 1em;
         }
 
         img {
-          max-width: 250px;
-
           @include mq($med-large) {
             max-width: 100%;
           }      
@@ -1511,6 +1509,50 @@ h1, h2, h3, h4, h5 {
       }
     }
   }
+
+  .gold-sponsors {
+    text-align: center;
+    margin-bottom: 4em;
+
+    @include mq($wide) {
+      margin-bottom: 6em;
+    }
+  
+    .gold-sponsors__list {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+
+      li {
+        margin-bottom: 1em;
+        padding: 0.5em 0;
+        list-style-type: none;
+        width: 48%;
+        background-image:
+          url('/images/svg/sponsor-border-t.svg'),
+          url('/images/svg/sponsor-border-r.svg'),
+          url('/images/svg/sponsor-border-b.svg'),
+          url('/images/svg/sponsor-border-l.svg');
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+        background-position: top, right, bottom, left;
+        background-color: #fff;
+
+        @include mq($small) {
+          width: 40%;
+        }
+
+        @include mq($medium) {
+          width: 30%;
+        }
+
+        @include mq($med-large) {
+          width: 24%;
+        }
+      }
+    }
+  }
+
 
   .community-sponsors {
     text-align: center;
@@ -1522,13 +1564,13 @@ h1, h2, h3, h4, h5 {
   
     .community-sponsors__list {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex-wrap: wrap;
 
       li {
         margin-bottom: 1em;
-        padding: 1em 0;
+        padding: 0.5em 0;
         list-style-type: none;
         width: 48%;
         background-image:
