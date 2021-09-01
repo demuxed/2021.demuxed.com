@@ -1416,7 +1416,7 @@ h1, h2, h3, h4, h5 {
   .main-sponsors {
     margin-bottom: 4em;
 
-    @include mq($medium) {
+    @include mq($med-large) {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -1435,10 +1435,14 @@ h1, h2, h3, h4, h5 {
       position: relative;
 
       @include mq($small){
-        width: 68%;
+        width: 60%;
       }
 
       @include mq($medium) {
+        width: 40%;
+      }
+
+      @include mq($med-large) {
         width: 30%;
         padding-bottom: 2em;
         background-image: url('/images/svg/main-sponsor-shad.svg');
@@ -1609,25 +1613,27 @@ h1, h2, h3, h4, h5 {
         url('/images/svg/sponsor-border-l.svg');
       background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
       background-position: top, right, bottom, left;
-      padding: 3.5em 0;
+      padding: 1em 1em;
 
       @include mq($small) {
         display: block;
-        max-width: 68%;
+        width: 60%;
         margin: 0 auto;
-        padding: 4em 0;
+        padding: 1em 1em;
+      }
+
+      @include mq($medium) {
+        width: 40%;
       }
 
       @include mq($med-large) {
-        max-width: 42%;
+        width: 30%;
       }
 
       img {
-        max-width: 250px;
-
         @include mq($medium) {
           max-width: 100%;
-        }      
+        }
       }
     }
   }
