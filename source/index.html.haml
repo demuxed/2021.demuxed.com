@@ -42,287 +42,62 @@ title: Demuxed 2021
     = image_tag "/images/svg/why-watch-mobile.svg", :alt => "", :class => "why-img__mobile"
     = image_tag "/images/svg/why-watch.svg", :alt => "", :class => "why-img"
 
--# %div.black-background
--#   %section.speakers#speakers
--#     %div.container
--#       %h2.section-heading
--#         Our Speakers
 
--#       %ul.speakers-list
--#         %li.speakers-list__card#scott-kellicker
--#           %div.speakers-list__img-wrap
--#             = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
--#           %div.speakers-list__text
--#             %h3.speakers-list__name Alexandria Shealy
--#             %h4.speakers-list__company Twitch
--#             %p.speakers-list__talk-title The “technical” in technical project management.
--#             %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
+%div.black-background
+  %section.speakers#speakers
+    %div.container
+      %h2.section-heading
+        Our Speakers
 
--#         %li.speakers-list__card
--#           %div.speakers-list__img-wrap
--#             = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
--#           %div.speakers-list__text
--#             %h3.speakers-list__name Tarek Amara Amara Amara Amara
--#             %h4.speakers-list__company Twitch
--#             %p.speakers-list__talk-title How to build a high quality 'live' HD VP9 Encoder
--#             %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
+      %ul.speakers-list
 
--#         %li.speakers-list__card
--#           %div.speakers-list__img-wrap
--#             = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
--#           %div.speakers-list__text
--#             %h3.speakers-list__name Jean-Baptiste Kempf
--#             %h4.speakers-list__company Videolan
--#             %p.speakers-list__talk-title "Time Machine" - how to reconstruct perceptually, during playback, part of the detail lost in encoding
--#             %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
+        - data.speakers.each do |speaker|
+          %li.speakers-list__card
+            %div.speakers-list__img-wrap
+              - if speaker.custom_photo_url
+                = image_tag(speaker.custom_photo_url, alt: "", class: "speakers-list__img")
+              - else
+                = image_tag("https://demuxed-speakers-2021.imgix.net/#{speaker.name.downcase.split(' ').join('-')}.jpg?w=170&h=240&fit=facearea&facepad=3&auto=format,compress&q=70", alt: "", class: "speakers-list__img")
+            %div.speakers-list__text
+              %h3.speakers-list__name
+                = speaker.name
+              %h4.speakers-list__company
+                = speaker.company
+              %p.speakers-list__talk-title
+                = data.talks[speaker.talk].title
+              %a.speakers-list__talk-overview{onclick: "showTalkModal(event, 'popup-#{speaker.talk}');"} Talk overview
 
--#         %li.speakers-list__card
--#           %div.speakers-list__img-wrap
--#             = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
--#           %div.speakers-list__text
--#             %h3.speakers-list__name Lahiru Dayananda
--#             %h4.speakers-list__company Brightcove
--#             %p.speakers-list__talk-title How to be data-driven when you aren’t Netflix (or even if you are)
--#             %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
+  %section.schedule#schedule
+    %div.container
+      %h2.section-heading
+        The Schedule
+        %span
+          October 5th, 6th, 7th, 2021
+        %span.timezones
+          All times are shown in Pacific Daylight Time (GMT-7)
 
--#         %li.speakers-list__card
--#           %div.speakers-list__img-wrap
--#             = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
--#           %div.speakers-list__text
--#             %h3.speakers-list__name Lahiru Dayananda
--#             %h4.speakers-list__company Brightcove
--#             %p.speakers-list__talk-title How to be data-driven when you aren’t Netflix (or even if you are)
--#             %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
+      %div.days
 
--#         %li.speakers-list__card
--#           %div.speakers-list__img-wrap
--#             = image_tag("/images/speaker.jpg", alt: "", class: "speakers-list__img")
--#           %div.speakers-list__text
--#             %h3.speakers-list__name Lahiru Dayananda
--#             %h4.speakers-list__company Brightcove
--#             %p.speakers-list__talk-title How to be data-driven when you aren’t Netflix (or even if you are)
--#             %a.speakers-list__talk-overview{href:"#popup-scott-kellicker"} Talk overview
+        %ul.day.tuesday
+          %li
+            %h3.date Tuesday 5th
 
--#   %section.schedule#schedule
--#     %div.container
--#       %h2.section-heading
--#         The Schedule
--#         %span
--#           October 5th-7th 2021
+          - data.schedule['tuesday'].each do | session |
+            = partial 'partials/schedule-entry', locals: { session: session }
 
--#       %div.days
--#         = link_to "Tuesday 27th", "", :class => "schedule__day-switcher"
+        %ul.day.wednesday
+          %li
+            %h3.date Wednesday 6th
 
--#         %ul.day.tuesday
--#           %li
--#             %h3.date Tuesday 27th
+          - data.schedule['wednesday'].each do | session |
+            = partial 'partials/schedule-entry', locals: { session: session }
 
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
+        %ul.day.thursday
+          %li
+            %h3.date Thursday 7th
 
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.break
--#             %h4.break__type
--#               15min break
--#             = image_tag("/images/svg/break.svg", alt: "", class: "break__img")
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.break
--#             %h4.break__type
--#               Lunch break
--#             = image_tag("/images/svg/lunch.svg", alt: "", class: "break__img")
-
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#         %ul.day.wednesday
--#           %li
--#             %h3.date Wednesday 28th
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.break
--#             %h4.break__type
--#               15min break
--#             = image_tag("/images/svg/break.svg", alt: "", class: "break__img")
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.break
--#             %h4.break__type
--#               Lunch break
--#             = image_tag("/images/svg/lunch.svg", alt: "", class: "break__img")
-
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#         %ul.day.thursday
--#           %li
--#             %h3.date Thursday 29th
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.break
--#             %h4.break__type
--#               15min break
--#             = image_tag("/images/svg/break.svg", alt: "", class: "break__img")
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.break
--#             %h4.break__type
--#               Lunch break
--#             = image_tag("/images/svg/lunch.svg", alt: "", class: "break__img")
-
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
--#           %li.talk
--#             %div.talk__img
--#               = image_tag("/images/speaker.jpg", alt: "", class: "schedule-list__img")
--#             %div.talk__text
--#               %h4.talk__time
--#                 9am - 9.45am
--#               %h4.talk__name
--#                 Konstantin Wilms
--#               %a.talk__desc{href:"#popup-scott-kellicker"}
--#                 Large-Scale Media Archive Migration to the Cloud
-
+          - data.schedule['thursday'].each do | session |
+            = partial 'partials/schedule-entry', locals: { session: session }
 
 %section
   %div.container.about-us#about-us
@@ -347,79 +122,75 @@ title: Demuxed 2021
     %h2.section-heading
       Our Sponsors
 
-    -# %ul.main-sponsors
-    -#   %li
-    -#     = image_tag("/images/svg/sponsor-person-l.svg", alt: "", class: "sponsor-person-l")
+    %ul.main-sponsors
+      %li
+        = image_tag("/images/svg/sponsor-person-l.svg", alt: "", class: "sponsor-person-l")
 
-    -#     %h4.sponsor-title
-    -#       Day 1
-    -#       %span Sponsor
+        %h4.sponsor-title
+          Day 1
+          %span Sponsor
 
-    -#     %div.sponsor
-    -#       = image_tag("/images/svg/sponsors/google.svg", alt: "", class: "")
+        %div.sponsor
+          = link_to(image_tag("/images/svg/sponsors/spotai.png", alt: "", class: ""), "https://www.spot.ai/", target: "_blank", rel: "noopener noreferrer")
 
-    -#   %li
-    -#     %h4.sponsor-title
-    -#       Day 2
-    -#       %span Sponsor
+      %li
+        %h4.sponsor-title
+          Day 2
+          %span Sponsor
 
-    -#     %div.sponsor
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+        %div.sponsor
+          = link_to(image_tag("/images/svg/sponsors/encodingdotcom-balanced.svg", alt: "", class: ""), "https://www.encoding.com/", target: "_blank", rel: "noopener noreferrer")
 
-    -#   %li
-    -#     = image_tag("/images/svg/sponsor-person-r.svg", alt: "", class: "sponsor-person-r")
-    -#     %h4.sponsor-title
-    -#       Day 3
-    -#       %span Sponsor
+      -# %li
+      -#   = image_tag("/images/svg/sponsor-person-r.svg", alt: "", class: "sponsor-person-r")
+      -#   %h4.sponsor-title
+      -#     Day 3
+      -#     %span Sponsor
 
-    -#     %div.sponsor
-    -#       = image_tag("/images/svg/sponsors/fastly.svg", alt: "", class: "")
+      -#   %div.sponsor
+      -#     = image_tag("/images/svg/sponsors/spotai.png", alt: "", class: "")
 
-    -# %div.community-sponsors
-    -#   %h3.sponsor-title
-    -#     Community
-    -#     %span sponsors
-    -#   %ul.community-sponsors__list
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
-    -#     %li
-    -#       = image_tag("/images/svg/sponsors/netflix.svg", alt: "", class: "")
+    %div.gold-sponsors
+      %h3.sponsor-title
+        Gold
+        %span sponsors
+      %ul.gold-sponsors__list
+        %li
+          = link_to(image_tag("/images/svg/sponsors/bitmovin.svg", alt: "", class: ""), "https://bitmovin.com", target: "_blank", rel: "noopener noreferrer")
+        %li
+          = link_to(image_tag("/images/svg/sponsors/viacomcbs.png", alt: "", class: ""), "https://www.viacomcbs.com/brand/viacomcbs-streaming", target: "_blank", rel: "noopener noreferrer")
+        %li
+          = link_to(image_tag("/images/svg/sponsors/streamshark.svg", alt: "", class: ""), "https://streamshark.io/", target: "_blank", rel: "noopener noreferrer")
+        %li
+          = link_to(image_tag("/images/svg/sponsors/aws.png", alt: "", class: ""), "https://aws.amazon.com", target: "_blank", rel: "noopener noreferrer")
+
+    %div.community-sponsors
+      %h3.sponsor-title
+        Community
+        %span sponsors
+      %ul.community-sponsors__list
+        %li
+          = link_to(image_tag("/images/svg/sponsors/stackpath.svg", alt: "", class: ""), "https://stackpath.com", target: "_blank", rel: "noopener noreferrer")
+        %li
+          = link_to(image_tag("/images/svg/sponsors/lumen.png", alt: "", class: ""), "https://www.lumen.com", target: "_blank", rel: "noopener noreferrer")
+        %li
+          = link_to(image_tag("/images/svg/sponsors/100ms.png", alt: "", class: ""), "https://100ms.live", target: "_blank", rel: "noopener noreferrer")
+        %li
+          = link_to(image_tag("/images/svg/sponsors/ezdrm.svg", alt: "", class: ""), "https://ezdrm.com", target: "_blank", rel: "noopener noreferrer")
+        %li
+          = link_to(image_tag("/images/svg/sponsors/philo.svg", alt: "", class: ""), "https://www.philo.com", target: "_blank", rel: "noopener noreferrer")
+        %li
+          = link_to(image_tag("/images/svg/sponsors/ns1.svg", alt: "", class: ""), "https://ns1.com", target: "_blank", rel: "noopener noreferrer")
+        %li
+          = link_to(image_tag("/images/svg/sponsors/unified.svg", alt: "", class: ""), "https://www.unified-streaming.com", target: "_blank", rel: "noopener noreferrer")
+        %li
+          = link_to(image_tag("/images/svg/sponsors/m2amedia.svg", alt: "", class: ""), "https://www.m2amedia.tv", target: "_blank", rel: "noopener noreferrer")
+        %li
+          = link_to(image_tag("/images/svg/sponsors/dolby.svg", alt: "", class: ""), "https://dolby.io", target: "_blank", rel: "noopener noreferrer")
+        %li
+          = link_to(image_tag("/images/svg/sponsors/primevideo.png", alt: "", class: ""), "https://www.amazon.com/Prime-Video/b?node=2676882011", target: "_blank", rel: "noopener noreferrer")
+        %li
+          = link_to(image_tag("/images/svg/sponsors/fastly.png", alt: "", class: ""), "https://fastly.com", target: "_blank", rel: "noopener noreferrer")
 
     %div.organising-sponsor
       %h3.sponsor-title
@@ -427,7 +198,7 @@ title: Demuxed 2021
         %span By
 
       %div.sponsor
-        = image_tag("/images/svg/sponsors/mux.svg", alt: "", class: "") 
+        = link_to(image_tag("/images/svg/sponsors/mux.png", alt: "", class: ""), "https://mux.com", target: "_blank", rel: "noopener noreferrer")
 
   = image_tag("/images/svg/footer-mobile.svg", alt: "", class: "footer-mobile")
 
