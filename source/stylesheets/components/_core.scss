@@ -816,67 +816,6 @@ h1, h2, h3, h4, h5 {
     justify-content: space-between;
   }
 
-  /*hide and show days*/
-  .wednesday, .thursday {
-    display: none;
-      @include mq($med-large) {
-        display: block;
-      }
-  }
-
-  .tuesday {
-    .date {
-      display: none;
-
-      @include mq($med-large) {
-        display: block;
-      }
-    }
-  }
-  /*hide and show days*/
-
-  .schedule__day-switcher {
-      @include btn;
-      padding: 1em 0;
-      margin-bottom: 1em;
-      background-image: url('/images/svg/down-arrow.svg'), url('/images/svg/switcher-bg.svg');
-      background-repeat: no-repeat;
-      background-position: right, center;
-      background-size: 55px, 100%;
-      background-color: #000;
-      display: block;
-      width: 100%;
-      margin: 0 auto;
-      text-align: left;
-      padding-left: 2em;
-
-
-      @include mq($tiny) {
-        max-width: 85%;
-      }
-
-      @include mq($small) {
-        max-width: 55%;
-      }
-
-      @include mq($medium) {
-        max-width: 40%;
-      }
-
-      @include mq($med-large) {
-        display: none;
-      }
-
-      /*font clamp fallbacks*/
-        font-size: 3.6vw;
-
-        @include mq($small) {
-          font-size: 2.3vw;
-        }
-      /*font clamp fallbacks*/
-     font-size: clamp(1.3rem, 1.4vw, 2rem)!important;
-  }
-
   .wednesday {
     @include mq($large) {
       background-image: url('/images/svg/schedule-vr.svg'), url('/images/svg/schedule-vr-2.svg');
