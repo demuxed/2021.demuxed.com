@@ -6,7 +6,7 @@
   },
   {
     "name": "Behnam Kakavand",
-    "company": "Evolution Gaming",
+    "company": "Evolution",
     "talk": "dos-and-donts-in-producing-a-vr-live-stream"
   },
   {
@@ -88,6 +88,11 @@
     "company": "Qualabs",
     "talk": "a-pirates-tale-building-a-clientside-antipiracy-solution-in-a-week",
     "custom_photo_url": "https://demuxed-speakers-2021.imgix.net/nicolas-levy.jpg?w=170&h=240&fp-x=0.5&fp-y=0.45&fit=crop&fp-z=1.0&crop=focalpoint&auto=format,compress&q=70"
+  },
+  {
+    "name": "Nitin Garg",
+    "company": "Facebook",
+    "talk": "holographic-video-calling"
   },
   {
     "name": "Phil Cluff",
