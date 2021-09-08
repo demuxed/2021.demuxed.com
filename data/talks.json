@@ -24,7 +24,8 @@
     "title": "Stream Harder: Redux",
     "description": "Coming Soon",
     "speakers": [
-      "Caitlin O'Callaghan"
+      "Caitlin O'Callaghan",
+      "Colleen Kelly Henry"
     ]
   },
   "accessibility--media-players": {
@@ -78,7 +79,7 @@
   },
   "updates-on-the-ffmpeg-and-free-software-community": {
     "title": "Updates on the FFmpeg and Free software community",
-    "description": "Coming Soon",
+    "description": "I plan to talk about the changes in the FFmpeg community, (in the libav community), and what happened in the FFmpeg project - code wise - and our realization. FFmpeg 5.0, releases, CoC and a few other things. I plan to speak about dav1d, x264/rav1e on ARM too.",
     "speakers": [
       "Jean-Baptiste Kempf"
     ]
