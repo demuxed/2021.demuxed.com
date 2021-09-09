@@ -20,6 +20,11 @@
     "talk": "accessibility--media-players"
   },
   {
+    "name": "Colleen Kelly Henry",
+    "company": "Streamline",
+    "talk": "stream-harder-redux"
+  },
+  {
     "name": "Collin Miller",
     "company": "Screencastify",
     "talk": "puppeteer--canvas--webcodecs-to-replace-ffmpeg"
@@ -47,7 +52,7 @@
   },
   {
     "name": "Janet Kim",
-    "company": "Apollo350",
+    "company": "Apollo 350",
     "talk": "live-video-amas-in-30-days"
   },
   {
