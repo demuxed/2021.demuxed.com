@@ -69,6 +69,11 @@
       "start": "13:05",
       "end": "13:20",
       "talk": "content-classification-for-live-streams-with-ffmpeg"
+    },
+    {
+      "start": "13:20",
+      "end": "13:45",
+      "talk": "hdr-doesnt-have-to-be-hard"
     }
   ],
   "wednesday": [

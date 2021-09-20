@@ -22,7 +22,7 @@
   },
   "streamline-2-stream-harder-redux": {
     "title": "Streamline 2: Stream Harder: Redux",
-    "description": "You can now access enough processing power via off-the-shelf hardware that you can build an 8k live video encoder and pipeline using parts from Amazon Prime and free software. The Streamline crew will show you how to do just that, and, all the things you should use that power for than 8k if you don’t have that use case. ",
+    "description": "You can now access enough processing power via off-the-shelf hardware that you can build an 8k live video encoder and pipeline using parts from Amazon Prime and free software. The Streamline crew will show you how to do just that, and, all the things you SHOULD use that power for INSTEAD of 8k if you don’t have that use case. (which you probably don&#39;t)",
     "speakers": [
       "Caitlin O'Callaghan",
       "Colleen Kelly Henry"
@@ -121,7 +121,7 @@
   },
   "holographic-video-calling": {
     "title": "Holographic video calling",
-    "description": "Coming Soon",
+    "description": "During COVID, the importance of video calling grew as people were stuck and separated from their family and friends. But the 2D experience falls short of making you feel present in the same space together. Moving to a 3D calling experience (e.g. holographic calling) can help people feel closer and more immersed.<br><br>People are familiar with the concept of holographic video calling from sci-fi movies, and there have been some demos by different companies using highly specialized equipment. But what would it take to make it a reality, enabling this technology for the masses, and making it so that people can use it as easily as 2D calls? The answer to this question spans multiple domains, both on hardware and software, from computer vision and machine learning to compression and real-time transport. In this talk, I will focus on some of the technical challenges this brings for video and real time communication.",
     "speakers": [
       "Nitin Garg"
     ]
@@ -161,6 +161,13 @@
       "Sean McCarthy"
     ]
   },
+  "hdr-doesnt-have-to-be-hard": {
+    "title": "HDR doesn&#39;t have to be hard",
+    "description": "A lot of HDR implementations are incredibly powerful, and the resulting demo reels are impressive. But video tech is mostly a tool to tell stories, and it turned out that HDR is overengineered compared to how people use it. That overengineering makes HDR difficult to work with, requiring complex and expensive solutions.<br><br>What would it take for us as an industry to replace complexity with convention, simplifying workflows and lowering costs? What would we lose, and what would we gain?",
+    "speakers": [
+      "Steve Robertson"
+    ]
+  },
   "30000-fps-nginx--to-russia-with-love": {
     "title": "30,000 fps nginx - To Russia with Love",
     "description": "Server-side mp4 lossless precise seeking is hard.  Most of the time, you jump between keyframes.  Tracey will show the initial idea, to speedup the fps of the video frames just before the exact wanted seek point.  This became early custom patches to mod_h264_streaming abandonware in 2013.<br><br>In 2021, it was time to switch to the &quot;house&quot; nginx &quot;mp4&quot; module and update their mp4 module to exact video starts.  Time to become contributor #56 to nginx and collaborate with some of the best C programmers on the planet [level unlocked!]  Let&#39;s hack some (dyslexia unfriendly) STTS and STSS moov atoms...",
@@ -177,7 +184,7 @@
   },
   "origins-of-many-strange-things-in-video": {
     "title": "Origins of many strange things in video",
-    "description": "Coming Soon",
+    "description": "In this talk I will review some odd-looking numbers and design aspects that exists in modern days video and media systems and try to explain how and why they have been derived, what was the original intended utility and why we have stuck with them. <br>Among things I will review will be:<br><br>Interlace scan -- 1880 patent by Maurice Leblanc: reducing bandwidth for line-by-line transmission of 2D images<br>YUV color spaces -- 1938 patent by Georges Valensi: compatibility with Black&amp;White TV<br>4:2:0 choma subsampling: 1949 patent by Alda Bedford, RCA; reducing bandwidth<br>First color TV system: 1951: CBS field-sequential system; did not use YUV!<br>First HDTV System: 1979 Japanese MUSE system. Analog. Extreme form of interlace and subsamling of everything. <br>3:2 pulldowns -- 1950s “Flying Spot” machines (all analog, this was well before CCDs!)<br>25/30 fps framerates -- 1930s: use of 50/60Hz AC power frequency as base reference<br>29.97 framerate -- 1953: bandwidth constraints in the design of NTSC <br>44.1kHz sampling rate -- 1980: desire to fit Beethoven&#39;s 9th Symphony on a single CD<br>NTSC, EBU, and SMPTE-C colors -- a case when industry has ignored the standard<br>Standard resolutions: 1080p, 720p, 480i, 576i, etc. -- each has history!<br>Anamorthic formats: 10:11, 12:11, 40:33, 4:3, 3:2, 64:33, etc. - each has history!",
     "speakers": [
       "Yuriy Reznik"
     ]
