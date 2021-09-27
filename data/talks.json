@@ -20,14 +20,6 @@
       "Behnam Kakavand"
     ]
   },
-  "streamline-2-stream-harder-redux": {
-    "title": "Streamline 2: Stream Harder: Redux",
-    "description": "You can now access enough processing power via off-the-shelf hardware that you can build an 8k live video encoder and pipeline using parts from Amazon Prime and free software. The Streamline crew will show you how to do just that, and, all the things you SHOULD use that power for INSTEAD of 8k if you don’t have that use case. (which you probably don&#39;t)",
-    "speakers": [
-      "Caitlin O'Callaghan",
-      "Colleen Kelly Henry"
-    ]
-  },
   "accessibility--media-players": {
     "title": "Accessibility &amp; Media Players",
     "description": "Oftentimes, when people bemoan the state of accessibility for media playback, they’re talking about the media content itself: closed captioning, audio descriptions, available transcripts, seizure-causing flashes in video content, scene color contrast, and the like. These are unquestionably important considerations when attempting to making your users’ media playback experience accessible, but they are unfortunately also very hard and sometimes quite costly problems. Not only that, oftentimes these (at least currently) require considerations and buy-in at the production phases of content creation, well before the media makes its way into streaming media pipelines, platforms, and players.<br><br>Yet there is an area of much easier, cheaper, and tractable improvements to accessibility available to video engineers - the media player itself. In this talk, I’ll give an overview of the primary considerations for making an accessible browser-based media player. At its core, good media player accessibility requires a semantics that is consistent and make sense for both non-technical users and video developers alike. This goes hand in hand with coming up with the right metaphors for the different kinds of interactions and information surfacing—analogous to the physical metaphors at play for visual user experience. With these, we should be able to establish some best practices and reference implementations for common use cases. Finally, I’ll end by demo-ing a player-agnostic example implementation aiming toward these goals, along with some bonus wins you get for free when you make your media player accessible.",
