@@ -67,12 +67,7 @@
     },
     {
       "start": "13:05",
-      "end": "13:20",
-      "talk": "content-classification-for-live-streams-with-ffmpeg"
-    },
-    {
-      "start": "13:20",
-      "end": "13:45",
+      "end": "13:30",
       "talk": "hdr-doesnt-have-to-be-hard"
     }
   ],
@@ -139,12 +134,12 @@
     },
     {
       "start": "12:40",
-      "end": "13:05",
-      "talk": "rasterized-typography-in-video--then-and-now"
+      "end": "12:55",
+      "talk": "content-classification-for-live-streams-with-ffmpeg"
     },
     {
-      "start": "13:05",
-      "end": "13:20",
+      "start": "12:55",
+      "end": "13:10",
       "talk": "holographic-video-calling"
     }
   ],
