@@ -146,6 +146,13 @@
       "Sean McCarthy"
     ]
   },
+  "rip-your-players-face-off": {
+    "title": "Rip your player&#39;s face off",
+    "description": "In the early aughts, a Player as we knew it was a RealPlayer or Quicktime browser plugin. Later, that became a JavaScript library that knew how to juggle between Flash and HTML5. A Player was the bundle of the entire world for video, from playback engine to UI elements. Those days are (mostly) dead now, so why are we still carrying on with coupling tighter than skinny jeans in 2008?<br><br>For 2021+ I&#39;d like to propose an architecture for web-based players that clearly separates the concerns while setting up an ecosystem for widespread community video development. The proposal builds on existing open web patterns and requires nothing proprietary.",
+    "speakers": [
+      "Steve Heffernan"
+    ]
+  },
   "hdr-doesnt-have-to-be-hard": {
     "title": "HDR doesn&#39;t have to be hard",
     "description": "A lot of HDR implementations are incredibly powerful, and the resulting demo reels are impressive. But video tech is mostly a tool to tell stories, and it turned out that HDR is overengineered compared to how people use it. That overengineering makes HDR difficult to work with, requiring complex and expensive solutions.<br><br>What would it take for us as an industry to replace complexity with convention, simplifying workflows and lowering costs? What would we lose, and what would we gain?",
