@@ -171,13 +171,8 @@
     },
     {
       "start": "10:10",
-      "end": "10:55",
-      "title": "Lightning Talks"
-    },
-    {
-      "start": "10:55",
       "end": "11:10",
-      "title": "Break"
+      "title": "Lightning Talks"
     },
     {
       "start": "11:10",
@@ -186,32 +181,37 @@
     },
     {
       "start": "11:35",
-      "end": "12:00",
-      "talk": "30000-fps-nginx--to-russia-with-love"
+      "end": "11:50",
+      "title": "Break"
     },
     {
-      "start": "12:00",
+      "start": "11:50",
       "end": "12:15",
-      "talk": "updates-on-the-ffmpeg-and-free-software-community"
+      "talk": "30000-fps-nginx--to-russia-with-love"
     },
     {
       "start": "12:15",
       "end": "12:30",
-      "title": "Break"
+      "talk": "updates-on-the-ffmpeg-and-free-software-community"
     },
     {
       "start": "12:30",
-      "end": "12:55",
+      "end": "12:45",
+      "title": "Break"
+    },
+    {
+      "start": "12:45",
+      "end": "13:10",
       "talk": "puppeteer--canvas--webcodecs-to-replace-ffmpeg"
     },
     {
-      "start": "12:55",
-      "end": "13:15",
+      "start": "13:10",
+      "end": "13:30",
       "title": "Surprise"
     },
     {
-      "start": "13:15",
-      "end": "13:20",
+      "start": "13:30",
+      "end": "13:35",
       "title": "Closing Remarks"
     }
   ]
