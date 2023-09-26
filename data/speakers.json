@@ -33,7 +33,7 @@
     "name": "Guillaume du Pontavice",
     "company": "Netflix",
     "talk": "improving-streaming-experience-with-bayesian-optimization-from-ab-to-az-test",
-    "custom_photo_url": "https://demuxed-speakers-2021.imgix.net/guillaume-du-pontavice.jpg?w=170&h=240&fp-x=0.5&fp-y=0.51&fit=crop&fp-z=1&crop=focalpoint&auto=format,compress&q=70"
+    "custom_photo_url": "https://demuxed-speakers.imgix.net/2021/guillaume-du-pontavice.jpg?w=170&h=240&fp-x=0.5&fp-y=0.51&fit=crop&fp-z=1&crop=focalpoint&auto=format,compress&q=70"
   },
   {
     "name": "Jacques Blom",
@@ -59,25 +59,25 @@
     "name": "Loke Dupont",
     "company": "TV2",
     "talk": "how-we-accelerated-live-2-vod-delivery-from-15-minutes-to-under-a-minute",
-    "custom_photo_url": "https://demuxed-speakers-2021.imgix.net/loke-dupont.jpg?w=170&h=240&fp-x=0.5&fp-y=0.8&fit=crop&fp-z=1.1&crop=focalpoint&auto=format,compress&q=70"
+    "custom_photo_url": "https://demuxed-speakers.imgix.net/2021/loke-dupont.jpg?w=170&h=240&fp-x=0.5&fp-y=0.8&fit=crop&fp-z=1.1&crop=focalpoint&auto=format,compress&q=70"
   },
   {
     "name": "Luke Curley",
     "company": "Twitch",
     "talk": "lowlatency-video-over-quic",
-    "custom_photo_url": "https://demuxed-speakers-2021.imgix.net/luke-curley.jpg?w=170&h=240&fp-x=0.5&fp-y=0.45&fit=crop&fp-z=1.1&crop=focalpoint&auto=format,compress&q=70"
+    "custom_photo_url": "https://demuxed-speakers.imgix.net/2021/luke-curley.jpg?w=170&h=240&fp-x=0.5&fp-y=0.45&fit=crop&fp-z=1.1&crop=focalpoint&auto=format,compress&q=70"
   },
   {
     "name": "Matthew Donato",
     "company": "Netflix",
     "talk": "ocf-at-nflx",
-    "custom_photo_url": "https://demuxed-speakers-2021.imgix.net/matthew-donato.jpg?w=170&h=240&fp-x=0.55&fp-y=0.45&fit=crop&fp-z=1.1&crop=focalpoint&auto=format,compress&q=70"
+    "custom_photo_url": "https://demuxed-speakers.imgix.net/2021/matthew-donato.jpg?w=170&h=240&fp-x=0.55&fp-y=0.45&fit=crop&fp-z=1.1&crop=focalpoint&auto=format,compress&q=70"
   },
   {
     "name": "Nicolas Levy",
     "company": "Qualabs",
     "talk": "a-pirates-tale-building-a-clientside-antipiracy-solution-in-a-week",
-    "custom_photo_url": "https://demuxed-speakers-2021.imgix.net/nicolas-levy.jpg?w=170&h=240&fp-x=0.5&fp-y=0.45&fit=crop&fp-z=1.0&crop=focalpoint&auto=format,compress&q=70"
+    "custom_photo_url": "https://demuxed-speakers.imgix.net/2021/nicolas-levy.jpg?w=170&h=240&fp-x=0.5&fp-y=0.45&fit=crop&fp-z=1.0&crop=focalpoint&auto=format,compress&q=70"
   },
   {
     "name": "Nitin Garg",
@@ -88,7 +88,7 @@
     "name": "Phil Cluff",
     "company": "Demuxed",
     "talk": "the-mostly-definitive-history-of-smellovision",
-    "custom_photo_url": "https://demuxed-speakers-2021.imgix.net/phil-cluff.jpg?w=170&h=240&fp-x=0.5&fp-y=0.45&fit=crop&fp-z=1&crop=focalpoint&auto=format,compress&q=70"
+    "custom_photo_url": "https://demuxed-speakers.imgix.net/2021/phil-cluff.jpg?w=170&h=240&fp-x=0.5&fp-y=0.45&fit=crop&fp-z=1&crop=focalpoint&auto=format,compress&q=70"
   },
   {
     "name": "Pulkit Tandon",
@@ -134,7 +134,7 @@
     "name": "Yuriy Reznik",
     "company": "Brightcove",
     "talk": "origins-of-many-strange-things-in-video",
-    "custom_photo_url": "https://demuxed-speakers-2021.imgix.net/yuriy-reznik.jpg?w=170&h=240&fp-x=0.5&fp-y=0.4&fit=crop&fp-z=1.1&crop=focalpoint&auto=format,compress&q=70"
+    "custom_photo_url": "https://demuxed-speakers.imgix.net/2021/yuriy-reznik.jpg?w=170&h=240&fp-x=0.5&fp-y=0.4&fit=crop&fp-z=1.1&crop=focalpoint&auto=format,compress&q=70"
   },
   {
     "name": "Yurong Jiang",
@@ -145,7 +145,7 @@
     "name": "Zac Shenker",
     "company": "Fastly",
     "talk": "whats-new-in-hls",
-    "custom_photo_url": "https://demuxed-speakers-2021.imgix.net/zac-shenker.jpg?w=170&h=240&fp-x=0.43&fp-y=0.45&fit=crop&fp-z=1.1&crop=focalpoint&auto=format,compress&q=70"
+    "custom_photo_url": "https://demuxed-speakers.imgix.net/2021/zac-shenker.jpg?w=170&h=240&fp-x=0.43&fp-y=0.45&fit=crop&fp-z=1.1&crop=focalpoint&auto=format,compress&q=70"
   },
   {
     "name": "Zoe Liu",
