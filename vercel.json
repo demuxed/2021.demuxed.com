@@ -1,6 +1,7 @@
 {
     "redirects": [
         { "source": "/namethatsmell", "destination": "https://stream.new/v/Lvd6uXwxefiHrwE00TGO3n02EAqLuLolIkKYqb2kjHA02g" },
-        { "source": "/swag", "destination": "https://ti.to/demuxed/2021/discount/i-want-swag" }
+        { "source": "/swag", "destination": "https://ti.to/demuxed/2021/discount/i-want-swag" },
+        { "source": "/live", "destination": "https://www.youtube.com/c/demuxed" }
     ]
 }
